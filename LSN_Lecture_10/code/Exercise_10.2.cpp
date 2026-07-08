@@ -126,7 +126,7 @@ int main(int argc, char* argv[]){
 
     
     if (rank == 0) {
-        cout << "Eden formato! Inizio il rush evolutivo finale..." << endl;
+        cout << "Eden formato! Inizia l'evoluzione finale" << endl;
         
         ofstream clean_file("migrations_type2_metrics_eden.dat"); clean_file.close();
 
@@ -138,7 +138,7 @@ int main(int argc, char* argv[]){
         }
 
         pop.save_best_path(map, "migration_type2_best_path.dat");
-        cout << "L'evoluzione mondiale e' terminata. Percorso ottimale salvato!" << endl;
+        cout << "Evoluzione terminata. Miglior percorso salvato!" << endl;
     }
 
     MPI_Finalize();

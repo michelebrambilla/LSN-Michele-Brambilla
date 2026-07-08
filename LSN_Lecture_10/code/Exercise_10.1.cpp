@@ -110,7 +110,7 @@ int main(int argc, char* argv[]){
 
     
     if (rank == 0) {
-        cout << "Eden formato! Inizio il rush evolutivo finale..." << endl;
+        cout << "Eden formato! Inizia l'evoluzione finale" << endl;
         
         ofstream clean_file("circle_metrics_eden.dat"); clean_file.close();
 
@@ -122,7 +122,7 @@ int main(int argc, char* argv[]){
         }
 
         pop.save_best_path(circle_map, "circle_best_path.dat");
-        cout << "L'evoluzione mondiale e' terminata. Percorso ottimale salvato!" << endl;
+        cout << "L'evoluzione e' terminata. Miglior percorso salvato!" << endl;
     }
 
 
@@ -175,7 +175,7 @@ int main(int argc, char* argv[]){
 
     
     if (rank == 0) {
-        cout << "Eden formato! Inizio il rush evolutivo finale..." << endl;
+        cout << "Eden formato! Inizia l'evoluzione finale" << endl;
         
         ofstream clean_file("square_metrics_eden.dat"); clean_file.close();
 
@@ -187,7 +187,7 @@ int main(int argc, char* argv[]){
         }
 
         pop.save_best_path(square_map, "square_best_path.dat");
-        cout << "L'evoluzione mondiale e' terminata. Percorso ottimale salvato!" << endl;
+        cout << "L'evoluzione e' terminata. Miglior percorso salvato" << endl;
     }
 
     MPI_Finalize();
