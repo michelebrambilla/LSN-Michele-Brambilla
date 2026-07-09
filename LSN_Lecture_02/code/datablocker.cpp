@@ -82,7 +82,7 @@ void DataBlocker::FinalResults(const string& nome_file) const {
 
     if(average > 0){
         rms = sqrt(average);
-        err_rms = err/(2.0*sqrt(rms));
+        err_rms = err/(2.0*rms);
     }
 
     
